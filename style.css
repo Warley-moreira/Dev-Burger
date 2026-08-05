@@ -1,0 +1,90 @@
+@import url('https://googleapis.com');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191b1a;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #8eec68;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 110px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    background-color: transparent;
+    border: 1px solid #8eec68;
+    color: #ccc;
+    cursor: not-redallowed;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+li {
+    border: 2px solid #8eec68;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+p {
+    color: #ffff;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #8eec68;
+}
+
+
+@media screen and (min-width: 340px) and (max-width: 940px) {
+
+    .container-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        width: 90px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 180px 180px;
+        justify-content: center;
+        gap: 10px;
+    }
+}
